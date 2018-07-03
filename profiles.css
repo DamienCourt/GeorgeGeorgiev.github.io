@@ -1,0 +1,130 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+/******** Gallery Section*********/
+
+.gallery{
+  float: left;
+  margin-left: 100px;
+  margin-top: 15px;
+  border: 1px solid black;
+}
+.gallery-container{
+  margin: 50px;
+  display: flex;
+  width: 900px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gallery-container figure{
+  width: 200px;
+  max-height: 260px;
+  box-shadow: 1px 2px 3px black;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.gallery-container figure:hover{
+  box-shadow: 5px 10px 80px black;
+  -webkit-transform: scale(1.1,1.1);
+  cursor: pointer;
+  z-index: 999;
+
+}
+.gallery-container img{
+  width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+  margin: 8px 0;
+}
+.gallery-container figcaption{
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+  padding: 4px 4px;
+}
+
+.tilt1{
+  -webkit-transform : rotate(-10deg);
+  z-index: 1;
+}
+
+.tilt2{
+  -webkit-transform : rotate(15deg);
+  z-index: 2;
+}
+.tilt3{
+  -webkit-transform : rotate(-25deg);
+  z-index: 1;
+}
+
+.tilt4{
+  -webkit-transform : rotate(10deg);
+  z-index: 1;
+}
+
+/****** Profile Section *******/
+
+.profile-container{
+  box-sizing: border-box;
+  float: right;
+  width: 700px;
+  border: 1px solid black;
+  margin-right: 100px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.profile-photo{
+  float: left;
+  width: 300px;
+  box-shadow: 1px 2px 3px black;
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-top: 10px;
+  font-family: 'Cedarville Cursive', cursive;
+  text-align: center;
+}
+.profile-photo img{
+ max-width: 100%;
+ height: 100%;
+}
+.profile-info{
+  display: inline-block;
+  float: right;
+  width: 360px;
+  margin-top: 10px;
+  border: 1px solid black;
+}
+.profile-info li{
+  margin: 20px 0;
+  display: table;
+}
+.profile-info li span{
+  display: table-cell;
+  padding-left: 5px;
+}
+.profile-info li >:first-child{
+  font-family: 'Cedarville Cursive', cursive;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #9B9B9B;
+  width: 160px;
+  background-color: white;
+  margin-right: 10px;
+}
+.profile-info li >:last-child{
+  background-color: #d4d4d4;
+  min-width: 140px;
+  max-width: 160px;
+  border-radius: 3px;
+}
+
+
+
+
