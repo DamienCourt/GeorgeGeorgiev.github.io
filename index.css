@@ -1,0 +1,263 @@
+@font-face {
+    font-family: dogfont;
+    src: url(fonts/GOODDP__.TTF);
+}
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+html{
+	height: 100%;
+}
+body{
+	background-color: white;
+	font-family: 'FS Millbank Negative', sans-serif;
+}
+h2{
+	font-family: dogfont;
+	font-weight: normal;
+	font-size: 46px;
+	color: #1e58b0;
+	margin-top: 50px;
+	text-align: center;
+}
+main{
+	background-image: url("images/wood.jpg");
+	background-size: 100% auto;
+	background-position: left bottom;
+}
+
+/******* Header & Menu *********/
+
+.main-header{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100px;
+	line-height: 90px;
+	border-bottom: 1px solid #333333;
+	color: #232323;
+	background-color: #fcffff;
+	opacity: 0.8;
+	z-index: 2;
+}
+.header-logo{
+	display: inline-block;
+	max-height: 100%;
+	color: white;
+}
+.header-title{
+	font-family: dogfont;
+	font-weight: normal;
+	display: inline-block;
+	color: #6e6e6e;
+	font-size: 82px;
+}
+.menu-container{
+	position: relative;
+ 	float: right;
+}
+.header-box{
+	display: inline-block;
+	border-left: 1px solid #333333;
+	height: 100px;
+	color: #6e6e6e;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 0px 30px;
+}
+.header-box a{
+	display: inline-block;
+	height: 90px;
+	width: 100px;
+	color: #6e6e6e;
+}
+.header-box a:hover{
+	color: yellow;
+}
+.menu-icon{
+	width: 23px;
+	height: 22px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+.nav-container{
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 4;
+	background-color: rgba(41, 41, 41, 0.9);
+	opacity: 0.9;
+}
+.nav-box{
+	position: fixed;
+	left: 40%;
+	top: 200px;
+	width: 350px;
+	height: 480px;
+	color: #ffffff;
+	border: 1px solid #6e6e6e;
+	background-color: #232323;
+}
+.nav-list li{
+	background-color: #232323;
+	border-bottom: 1px solid #6e6e6e;
+	text-align: center;
+	height: 80px;
+}
+.nav-list li a{
+	font-size: 20px;
+	font-weight: normal;
+	color: #6e6e6e;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	line-height: 80px;
+}
+.nav-list li:hover a{
+	color: #c8be00;
+}
+.slow-hover{
+	-webkit-transition: color 0.7s;
+    -moz-transition: color 0.7s;
+    -ms-transition: color 0.7s;
+    -o-transition: color 0.7s;
+    transition: color 0.6s;
+}
+
+/******* Main *********/
+
+.welcome-img{
+	background-color: white;
+	background-image: url("images/back.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 400px;
+}
+.columns-container{
+	position: relative;
+	text-align: center;
+	margin-top: 50px;
+}
+.column-box{
+	display: inline-table;
+	width: 250px;
+	height: 250px;
+	margin: 10px;
+	border-right: 1px solid #86801a99;
+}
+.column-box header{
+	margin: 20px 0;
+}
+.section-box header{
+	display: block;
+	color: yellow;
+	font-size: 18px;
+}
+.box-icon{
+	width: 40px;
+	height: 40px;
+}
+
+/****** Log In ******/
+
+.login-holder{
+	top: -100%;
+	left: 64%;
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 4px;
+	box-shadow: 0px 0px 20px #515043;
+	width: 350px;
+	text-align: center;
+	background-color: black;
+	color: white;
+	z-index: 4;
+}
+.login-holder h3{
+	font-weight: normal;
+	margin: 10px;
+}
+.login-form div{
+	margin: 20px;
+}
+.login-form{
+	border-top: 1px solid #333333;
+	padding-top: 10px;
+	color: #6e6e6e;
+}
+
+.login-form label{
+	display: block;
+	margin: 2px;
+	font-size: 18px;
+}
+.login-form input{
+	background-color: #232323;
+	border: 1px solid black;
+	border-radius: 2px;
+	width: 200px;
+	color: white;
+	height: 25px;
+	line-height: 50%;
+}
+.login-form input[type=submit]{
+	width: 80px;
+	height: 30px;
+	float: right;
+	margin-right: 30px;
+	color: white;
+	font-size: 14px;
+	text-shadow: 1px 1px black;
+	margin-bottom: 20px;
+}
+.login-form input[type=submit]:hover{
+	color: yellow;
+}
+.login-form a{
+	color: #06f;
+}
+
+/******* Footer *******/
+.page-footer{
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:125px; 
+	background-color: black;
+	color: #0075be;
+}
+.page-footer div{
+	display: inline-block;
+	margin-right: 40px;
+	height: 100px;
+	color: #0075be;
+}
+.page-footer img{
+	max-height: 40px;
+}
+.right{
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
