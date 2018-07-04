@@ -1,4 +1,4 @@
-//
+
 var data;
 var request = new XMLHttpRequest();
 request.open('GET','https://santiagovedra.github.io/GeorgeGeorgiev.github.io/dogs.json');
@@ -37,17 +37,16 @@ $('.nav-list a').click(function(){
 
 function showProfile(element)
 {
- var index = element.getAttribute('data-index');
- document.getElementById('profile_photo').src = data[index].photo;
+ 	var index = element.getAttribute('data-index');
+ 	document.getElementById('profile_photo').src = data[index].photo;
 
- document.getElementById('gender').innerHTML = data[index].gender;
- document.getElementById('age').innerHTML = data[index].age;
- document.getElementById('breed').innerHTML = data[index].breed;
- document.getElementById('sec_breed').innerHTML = data[index].sec_breed;
- document.getElementById('weight').innerHTML = data[index].weight;
- document.getElementById('city').innerHTML = data[index].city;
- document.getElementById('other').innerHTML = data[index].other;
-
+ 	document.getElementById('gender').innerHTML = data[index].gender;
+ 	document.getElementById('age').innerHTML = data[index].age;
+ 	document.getElementById('breed').innerHTML = data[index].breed;
+ 	document.getElementById('sec_breed').innerHTML = data[index].sec_breed;
+ 	document.getElementById('weight').innerHTML = data[index].weight;
+ 	document.getElementById('city').innerHTML = data[index].city;
+ 	document.getElementById('other').innerHTML = data[index].other;
 }
 
 

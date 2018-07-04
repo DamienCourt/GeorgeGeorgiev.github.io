@@ -13,6 +13,8 @@
   margin-left: 100px;
   margin-top: 15px;
   border: 1px solid black;
+  background-image: url("images/wood.jpg");
+  border-radius: 3px;
 }
 .gallery-container{
   margin: 50px;
@@ -78,6 +80,8 @@
   margin-right: 100px;
   margin-top: 10px;
   padding: 10px;
+  background-image: url("images/wood.jpg");
+  border-radius: 3px;
 }
 .profile-photo{
   float: left;
@@ -99,7 +103,6 @@
   float: right;
   width: 360px;
   margin-top: 10px;
-  border: 1px solid black;
 }
 .profile-info li{
   margin: 20px 0;
@@ -119,7 +122,7 @@
   margin-right: 10px;
 }
 .profile-info li >:last-child{
-  background-color: #d4d4d4;
+  background-color: #4ba2bf;
   min-width: 140px;
   max-width: 160px;
   border-radius: 3px;

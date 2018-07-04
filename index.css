@@ -18,9 +18,10 @@ body{
 h2{
 	font-family: dogfont;
 	font-weight: normal;
-	font-size: 46px;
+	font-size: 48px;
 	color: #1e58b0;
-	margin-top: 50px;
+	display: table-cell;
+	vertical-align: middle;
 	text-align: center;
 }
 main{
@@ -76,7 +77,7 @@ main{
 	color: #6e6e6e;
 }
 .header-box a:hover{
-	color: yellow;
+	color: #0075be;
 }
 .menu-icon{
 	width: 23px;
@@ -134,6 +135,8 @@ main{
 /******* Main *********/
 
 .welcome-img{
+    text-align:center; 
+    display:table;	
 	background-color: white;
 	background-image: url("images/back.jpg");
 	background-position: right;
@@ -146,25 +149,33 @@ main{
 	position: relative;
 	text-align: center;
 	margin-top: 50px;
+	height: 100%;
 }
 .column-box{
 	display: inline-table;
 	width: 250px;
-	height: 250px;
+	height: 300px;
 	margin: 10px;
 	border-right: 1px solid #86801a99;
+	cursor: pointer;
+}
+.column-box p{
+	font-size: 18px;
 }
 .column-box header{
-	margin: 20px 0;
+	margin: 30px 0;
+	font-size: 42px;
+	font-family: dogfont;
+	font-weight: normal;
+	color: #232323;
 }
 .section-box header{
 	display: block;
 	color: yellow;
-	font-size: 18px;
 }
 .box-icon{
-	width: 40px;
-	height: 40px;
+	width: 50px;
+	height: 50px;
 }
 
 /****** Log In ******/
